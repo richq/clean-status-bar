@@ -101,8 +101,8 @@ public class MainActivity extends Activity {
 
         @Override
         public void onPause() {
-            super.onPause();
             getPreferenceScreen().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);
+            super.onPause();
         }
 
         @Override
